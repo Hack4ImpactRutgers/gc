@@ -370,3 +370,4 @@ ActiveRecord::Schema.define(version: 2024_05_18_174354) do
   add_foreign_key "social_medias", "organizations"
   add_foreign_key "tags", "organizations"
 end
+# Random comment here
