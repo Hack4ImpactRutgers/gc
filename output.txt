@@ -1,0 +1,299 @@
+19:08:00 web.1    | started with pid 32805
+19:08:00 js.1     | started with pid 32806
+19:08:00 css.1    | started with pid 32807
+19:08:00 worker.1 | started with pid 32808
+19:08:01 css.1    | yarn run v1.22.22
+19:08:01 js.1     | yarn run v1.22.22
+19:08:01 js.1     | $ webpack serve --config ./webpack/webpack.config.js --mode development --progress
+19:08:01 css.1    | $ tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.tailwind.css --watch
+19:08:01 web.1    | Puma starting in single mode...
+19:08:01 web.1    | * Puma version: 5.6.9 (ruby 3.1.0-p0) ("Birdie's Version")
+19:08:01 web.1    | *  Min threads: 5
+19:08:01 web.1    | *  Max threads: 5
+19:08:01 web.1    | *  Environment: development
+19:08:01 web.1    | *          PID: 32805
+19:08:01 css.1    | 
+19:08:01 css.1    | Rebuilding...
+19:08:02 js.1     | <s> [webpack.Progress] 3% setup watch run
+19:08:02 js.1     | <s> [webpack.Progress] 3% setup watch run webpack-cli
+19:08:02 js.1     | <s> [webpack.Progress] 3% setup watch run WebpackAssetsManifest
+19:08:02 js.1     | <s> [webpack.Progress] 3% setup watch run webpack-dev-middleware
+19:08:02 js.1     | <s> [webpack.Progress] 3% setup watch run
+19:08:02 js.1     | <s> [webpack.Progress] 4% setup normal module factory
+19:08:02 js.1     | <s> [webpack.Progress] 4% setup normal module factory
+19:08:02 js.1     | <s> [webpack.Progress] 5% setup context module factory
+19:08:02 js.1     | <s> [webpack.Progress] 5% setup context module factory
+19:08:02 js.1     | <s> [webpack.Progress] 6% setup before compile
+19:08:02 js.1     | <s> [webpack.Progress] 6% setup before compile ProgressPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 6% setup before compile
+19:08:02 js.1     | <s> [webpack.Progress] 7% setup compile
+19:08:02 js.1     | <s> [webpack.Progress] 7% setup compile ExternalsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 7% setup compile
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation WebpackAssetsManifest
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation remove-empty-scripts
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation mini-css-extract-plugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation ArrayPushCallbackChunkFormatPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation JsonpChunkLoadingPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation StartupChunkDependenciesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation ImportScriptsChunkLoadingPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation FetchCompileWasmPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation FetchCompileAsyncWasmPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation WorkerPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation SplitChunksPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation ResolverCachePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 8% setup compilation
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ProgressPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation WebpackAssetsManifest
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ProvidePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation mini-css-extract-plugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ChunkPrefetchPreloadPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ModuleInfoHeaderPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation SourceMapDevToolPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation JavascriptModulesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation JsonModulesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation AssetModulesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation EntryPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation EntryPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RuntimePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation InferAsyncModulesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation DataUriPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation FileUriPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation CompatibilityPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation HarmonyModulesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation AMDPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RequireJsStuffPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation CommonJsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation LoaderPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation LoaderPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation NodeStuffPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation APIPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ExportsInfoApiPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation WebpackIsIncludedPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ConstPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation UseStrictPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RequireIncludePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RequireEnsurePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RequireContextPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ImportPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ImportMetaContextPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation SystemPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ImportMetaPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation URLPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation DefaultStatsFactoryPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation DefaultStatsPresetPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation DefaultStatsPrinterPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation JavascriptMetaInfoPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation EnsureChunkConditionsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RemoveEmptyChunksPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation MergeDuplicateChunksPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation SideEffectsFlagPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation FlagDependencyExportsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation NamedModuleIdsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation NamedChunkIdsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation DefinePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation TemplatedPathPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation RecordIdsPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation WarnCaseSensitiveModulesPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation EntryPlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation ProvidePlugin
+19:08:02 js.1     | <s> [webpack.Progress] 9% setup compilation
+19:08:02 js.1     | <s> [webpack.Progress] 10% building
+19:08:02 js.1     | <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
+19:08:02 js.1     | <i> [webpack-dev-server] Project is running at:
+19:08:02 js.1     | <i> [webpack-dev-server] Loopback: http://localhost:3035/, http://[::1]:3035/
+19:08:02 js.1     | <i> [webpack-dev-server] Content not from webpack is served from '/Users/hydra/Documents/Projects/gc/public' directory
+19:08:02 js.1     | <i> [webpack-dev-server] 404s will fallback to '/index.html'
+19:08:02 css.1    | 
+19:08:02 css.1    | Done in 582ms.
+19:08:02 js.1     | <s> [webpack.Progress] 10% building import loader ./node_modules/mini-css-extract-plugin/dist/loader.js
+19:08:02 js.1     | <s> [webpack.Progress] 10% building import loader ./node_modules/style-loader/dist/cjs.js
+19:08:02 js.1     | <s> [webpack.Progress] 10% building import loader ./node_modules/css-loader/dist/cjs.js
+19:08:02 js.1     | <s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
+19:08:02 js.1     | <s> [webpack.Progress] 10% building 0/3 entries 34/46 dependencies 11/27 modules
+19:08:02 js.1     | <s> [webpack.Progress] 10% building import loader ./node_modules/postcss-loader/dist/cjs.js
+19:08:02 js.1     | <s> [webpack.Progress] 10% building 0/3 entries 39/58 dependencies 15/28 modules
+19:08:03 js.1     | <s> [webpack.Progress] 10% building 0/3 entries 226/277 dependencies 39/114 modules
+19:08:03 js.1     | <s> [webpack.Progress] 28% building 1/3 entries 286/302 dependencies 97/126 modules
+19:08:03 worker.1 | 2024-10-19T23:08:03.617Z pid=32808 tid=u9o INFO: Booting Sidekiq 6.5.12 with Sidekiq::RedisConnection::RedisAdapter options {:url=>"redis://localhost:6379"}
+19:08:03 js.1     | <s> [webpack.Progress] 28% building 1/3 entries 300/326 dependencies 97/137 modules
+19:08:03 js.1     | <s> [webpack.Progress] 46% building 2/3 entries 419/419 dependencies 174/180 modules
+19:08:03 worker.1 | 2024-10-19T23:08:03.896Z pid=32808 tid=u9o INFO: Booted Rails 6.1.7.8 application in development environment
+19:08:03 worker.1 | 2024-10-19T23:08:03.896Z pid=32808 tid=u9o INFO: Running in ruby 3.1.0p0 (2021-12-25 revision fb4df44d16) [arm64-darwin23]
+19:08:03 worker.1 | 2024-10-19T23:08:03.897Z pid=32808 tid=u9o INFO: See LICENSE and the LGPL-3.0 for licensing details.
+19:08:03 worker.1 | 2024-10-19T23:08:03.897Z pid=32808 tid=u9o INFO: Upgrade to Sidekiq Pro for more features and support: https://sidekiq.org
+19:08:03 web.1    | * Listening on http://0.0.0.0:3000
+19:08:03 web.1    | bundler: failed to load command: puma (/Users/hydra/.rbenv/versions/3.1.0/bin/puma)
+19:08:03 web.1    | /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/lib/puma/launcher.rb:259:in `write': No such file or directory @ rb_sysopen - tmp/pids/server.pid (Errno::ENOENT)
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/lib/puma/launcher.rb:259:in `write_pid'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/lib/puma/launcher.rb:112:in `write_state'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/lib/puma/single.rb:48:in `run'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/lib/puma/launcher.rb:193:in `run'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/lib/puma/cli.rb:81:in `run'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/puma-5.6.9/bin/puma:10:in `<top (required)>'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/bin/puma:25:in `load'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/bin/puma:25:in `<top (required)>'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/cli/exec.rb:58:in `load'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/cli/exec.rb:58:in `kernel_load'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/cli/exec.rb:23:in `run'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/cli.rb:486:in `exec'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/cli.rb:31:in `dispatch'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/cli.rb:25:in `start'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/exe/bundle:48:in `block in <top (required)>'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/lib/bundler/friendly_errors.rb:120:in `with_friendly_errors'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/bundler-2.3.22/exe/bundle:36:in `<top (required)>'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/bin/bundle:25:in `load'
+19:08:03 web.1    | 	from /Users/hydra/.rbenv/versions/3.1.0/bin/bundle:25:in `<main>'
+19:08:03 js.1     | <s> [webpack.Progress] 65% building 3/3 entries 421/421 dependencies 180/180 modules
+19:08:03 js.1     | <s> [webpack.Progress] 65% building
+19:08:03 js.1     | <s> [webpack.Progress] 69% building finish
+19:08:03 js.1     | <s> [webpack.Progress] 69% building finish
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing finish module graph
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing finish module graph ResolverCachePlugin
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing finish module graph InferAsyncModulesPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing finish module graph FlagDependencyExportsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing finish module graph
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing plugins
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing plugins WarnCaseSensitiveModulesPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 70% sealing plugins
+19:08:03 js.1     | <s> [webpack.Progress] 71% sealing dependencies optimization
+19:08:03 js.1     | <s> [webpack.Progress] 71% sealing dependencies optimization SideEffectsFlagPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 71% sealing dependencies optimization
+19:08:03 js.1     | <s> [webpack.Progress] 71% sealing after dependencies optimization
+19:08:03 js.1     | <s> [webpack.Progress] 71% sealing after dependencies optimization
+19:08:03 js.1     | <s> [webpack.Progress] 72% sealing chunk graph
+19:08:03 js.1     | <s> [webpack.Progress] 72% sealing chunk graph
+19:08:03 js.1     | <s> [webpack.Progress] 73% sealing after chunk graph
+19:08:03 js.1     | <s> [webpack.Progress] 73% sealing after chunk graph
+19:08:03 js.1     | <s> [webpack.Progress] 73% sealing optimizing
+19:08:03 js.1     | <s> [webpack.Progress] 73% sealing optimizing
+19:08:03 js.1     | <s> [webpack.Progress] 74% sealing module optimization
+19:08:03 js.1     | <s> [webpack.Progress] 74% sealing module optimization
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing after module optimization
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing after module optimization
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization EnsureChunkConditionsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization MergeDuplicateChunksPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization SplitChunksPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 75% sealing chunk optimization
+19:08:03 js.1     | <s> [webpack.Progress] 76% sealing after chunk optimization
+19:08:03 js.1     | <s> [webpack.Progress] 76% sealing after chunk optimization
+19:08:03 js.1     | <s> [webpack.Progress] 77% sealing module and chunk tree optimization
+19:08:03 js.1     | <s> [webpack.Progress] 77% sealing module and chunk tree optimization
+19:08:03 js.1     | <s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+19:08:03 js.1     | <s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+19:08:03 js.1     | <s> [webpack.Progress] 78% sealing chunk modules optimization
+19:08:03 js.1     | <s> [webpack.Progress] 78% sealing chunk modules optimization
+19:08:03 js.1     | <s> [webpack.Progress] 78% sealing after chunk modules optimization
+19:08:03 js.1     | <s> [webpack.Progress] 78% sealing after chunk modules optimization
+19:08:03 js.1     | <s> [webpack.Progress] 79% sealing module reviving
+19:08:03 js.1     | <s> [webpack.Progress] 79% sealing module reviving RecordIdsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 79% sealing module reviving
+19:08:03 js.1     | <s> [webpack.Progress] 80% sealing before module ids
+19:08:03 js.1     | <s> [webpack.Progress] 80% sealing before module ids
+19:08:03 js.1     | <s> [webpack.Progress] 80% sealing module ids
+19:08:03 js.1     | <s> [webpack.Progress] 80% sealing module ids NamedModuleIdsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 80% sealing module ids
+19:08:03 js.1     | <s> [webpack.Progress] 81% sealing module id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 81% sealing module id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 82% sealing module id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 82% sealing module id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 82% sealing chunk reviving
+19:08:03 js.1     | <s> [webpack.Progress] 82% sealing chunk reviving RecordIdsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 82% sealing chunk reviving
+19:08:03 js.1     | <s> [webpack.Progress] 83% sealing before chunk ids
+19:08:03 js.1     | <s> [webpack.Progress] 83% sealing before chunk ids
+19:08:03 js.1     | <s> [webpack.Progress] 84% sealing chunk ids
+19:08:03 js.1     | <s> [webpack.Progress] 84% sealing chunk ids NamedChunkIdsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 84% sealing chunk ids
+19:08:03 js.1     | <s> [webpack.Progress] 84% sealing chunk id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 84% sealing chunk id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 85% sealing after chunk id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 85% sealing after chunk id optimization
+19:08:03 js.1     | <s> [webpack.Progress] 86% sealing record modules
+19:08:03 js.1     | <s> [webpack.Progress] 86% sealing record modules RecordIdsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 86% sealing record modules
+19:08:03 js.1     | <s> [webpack.Progress] 86% sealing record chunks
+19:08:03 js.1     | <s> [webpack.Progress] 86% sealing record chunks RecordIdsPlugin
+19:08:03 js.1     | <s> [webpack.Progress] 86% sealing record chunks
+19:08:03 js.1     | <s> [webpack.Progress] 87% sealing module hashing
+19:08:03 js.1     | <s> [webpack.Progress] 87% sealing module hashing
+19:08:03 js.1     | <s> [webpack.Progress] 87% sealing code generation
+19:08:03 js.1     | <s> [webpack.Progress] 87% sealing code generation
+19:08:03 js.1     | <s> [webpack.Progress] 88% sealing runtime requirements
+19:08:03 js.1     | <s> [webpack.Progress] 88% sealing runtime requirements
+19:08:03 js.1     | <s> [webpack.Progress] 89% sealing hashing
+19:08:03 js.1     | <s> [webpack.Progress] 89% sealing hashing
+19:08:03 js.1     | <s> [webpack.Progress] 89% sealing after hashing
+19:08:03 js.1     | <s> [webpack.Progress] 89% sealing after hashing
+19:08:03 js.1     | <s> [webpack.Progress] 90% sealing record hash
+19:08:03 js.1     | <s> [webpack.Progress] 90% sealing record hash
+19:08:03 js.1     | <s> [webpack.Progress] 91% sealing module assets processing
+19:08:03 js.1     | <s> [webpack.Progress] 91% sealing module assets processing
+19:08:03 js.1     | <s> [webpack.Progress] 91% sealing chunk assets processing
+19:08:03 js.1     | <s> [webpack.Progress] 91% sealing chunk assets processing
+19:08:03 web.1    | exited with code 1
+19:08:03 system   | sending SIGTERM to all processes
+19:08:03 worker.1 | 2024-10-19T23:08:03.981Z pid=32808 tid=u9o INFO: Shutting down
+19:08:03 worker.1 | 2024-10-19T23:08:03.981Z pid=32808 tid=u9o INFO: Terminating quiet threads
+19:08:03 worker.1 | 2024-10-19T23:08:03.984Z pid=32808 tid=1dsg INFO: Scheduler exiting...
+19:08:04 css.1    | exited with code 1
+19:08:04 js.1     | exited with code 1
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin administrate-938728a29b1c07e1ceb7.js generate SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin administrate-938728a29b1c07e1ceb7.js generated SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin application-cc3c808eb826190d183b.js generate SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin application-cc3c808eb826190d183b.js generated SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin js/actioncable.chunk.js generate SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin js/actioncable.chunk.js generated SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin administrate-938728a29b1c07e1ceb7.js attach SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin administrate-938728a29b1c07e1ceb7.js attached SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin application-cc3c808eb826190d183b.js attach SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin application-cc3c808eb826190d183b.js attached SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin js/actioncable.chunk.js attach SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin js/actioncable.chunk.js attached SourceMap
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing WebpackAssetsManifest
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing WebpackAssetsManifest
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing WebpackAssetsManifest
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing WebpackAssetsManifest resolve sources
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing WebpackAssetsManifest
+19:08:04          | <s> [webpack.Progress] 92% sealing asset processing
+19:08:04          | <s> [webpack.Progress] 93% sealing after asset optimization
+19:08:04          | <s> [webpack.Progress] 93% sealing after asset optimization remove-empty-scripts
+19:08:04          | <s> [webpack.Progress] 93% sealing after asset optimization
+19:08:04          | <s> [webpack.Progress] 93% sealing recording
+19:08:04          | <s> [webpack.Progress] 93% sealing recording
+19:08:04          | <s> [webpack.Progress] 94% sealing after seal
+19:08:04          | <s> [webpack.Progress] 94% sealing after seal
+19:08:04          | <s> [webpack.Progress] 95% emitting emit
+19:08:04          | <s> [webpack.Progress] 95% emitting emit
+19:08:04          | <i> [webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...
+19:08:04          | <s> [webpack.Progress] 98% emitting after emit
+19:08:04          | <s> [webpack.Progress] 98% emitting after emit WebpackAssetsManifest
+19:08:04          | <s> [webpack.Progress] 98% emitting after emit
+19:08:04          | <s> [webpack.Progress] 99% cache store build dependencies
+19:08:04          | <s> [webpack.Progress] 99% cache store build dependencies
+19:08:04          | <s> [webpack.Progress] 99% end closing watch compilation
+19:08:04          | <s> [webpack.Progress] 99% end closing watch compilation
+19:08:04          | <s> [webpack.Progress] 99% cache shutdown
+19:08:04          | <s> [webpack.Progress] 99% cache shutdown MemoryCachePlugin
+19:08:04          | <s> [webpack.Progress] 99% cache shutdown
+19:08:04          | <s> [webpack.Progress] 100% 
+19:08:04          | 
+19:08:04 worker.1 | 2024-10-19T23:08:04.485Z pid=32808 tid=u9o INFO: Pausing to allow jobs to finish...
+19:08:06 worker.1 | 2024-10-19T23:08:06.490Z pid=32808 tid=u9o INFO: Bye!
+19:08:06 worker.1 | exited with code 0
