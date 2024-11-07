@@ -76,7 +76,4 @@ Rails.application.routes.draw do
   # Custom routes for city-based search
   get "/atlantic_city", to: "cities#show", city: "Atlantic City", as: :atlantic_city
   get "/nashville", to: "cities#show", city: "Nashville", as: :nashville
-
-  # Non-profit Event Calendar
-  get 'event_calendar', to: 'event_calendar#index'
 end
