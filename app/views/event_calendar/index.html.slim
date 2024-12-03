@@ -1,8 +1,8 @@
 div.flex.justify-center.mt-16 
-    div.w-4/6
+    div.w-2/3
         p 
             b.text-xl My Account 
-        div.flex.gap-x-6.ml-10.mt-4 
+        div.flex.gap-x-6.ml-10.mt-4.mb-8 
             a#event_profile.text-cyan-600.linked_item style="transition: color 0.1s ease;" onclick="clicked(this)" href="#"
                 b.text-sm My Profile 
             a#event_saved_pages.linked_item style="transition: color 0.1s ease;" onclick="clicked(this)" href="#"
@@ -14,8 +14,21 @@ div.flex.justify-center.mt-16
             a#event_my_events.linked_item style="transition: color 0.1s ease;" onclick="clicked(this)" href="#"
                 b.text-sm My Events 
 
- / Fix positioning later
- = render Calendar::Component.new()
+        p.text-lg My Nonprofit Pages 
+        div.flex.w-full.gap-4.my-4
+            div.flex.w-full.justify-between
+                p.text-md 
+                    b NAMI Atlantic Cape May
+                a href="#" 
+                    b.text-md.text-cyan-600 Edit
+
+        hr.my-8
+
+        p.text-lg My Events
+
+
+/ Fix positioning later
+= render Calendar::Component.new()
 
 javascript:
     function clicked(element) {  

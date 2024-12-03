@@ -7,6 +7,8 @@ mkdir -p tmp/pids
 # Remove a potentially pre-existing server.pid for Rails
 rm -f /app/tmp/pids/server.pid
 
+yarn install
+
 # Wait until PostgreSQL is ready
 echo "Waiting for PostgreSQL to start..."
 until psql -h db -U postgres -c '\q' 2>/dev/null; do
