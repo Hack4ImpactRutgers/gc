@@ -1,0 +1,73 @@
+div class="flex flex-row bg-blue text-gray-2 items-center mx-20"
+  div class="self-start relative bg-white w-3/5 my-10 mx-5 p-8"
+    div class="bg-black h-60 m-auto" 
+    /! ^^ make this an image later
+    div class="flex flex-col items-center"
+      p class="text-sm px-2 py-1/2 border-black border rounded-xl m-2" Event Type
+      h1 class="font-bold px-2 py-1/2 m-2" Title of Event
+      = link_to "Add to Calendar", search_path, class:'flex items-center b-button inline-block text-black bg-[#E0E7FF]'
+      div class="flex flex-row  px-2 py-1/2 m-2"
+        p class="text-sm font-bold mx-1" More Information:
+        p class="text-sm" [link]
+    
+    div class="my-4 flex flex-col text-xs"
+      p class="my-2 font-bold" Description
+      p class="my-2" insert_description
+      div class="flex flex-row py-2"
+        p class="font-bold mr-1" Date:
+        p class="" [date]
+      div class="flex flex-row py-2"
+        p class="font-bold mr-1" Time:
+        p class="" [time]
+      div class="flex flex-row py-2"
+        p class="font-bold mr-1" Location:
+        p class="" [location]
+    
+    p class="my-4 w-1/2 text-sm font-bold" MAP
+    img class="my-4 bg-gray w-60 h-60"
+
+    div class="m-4 flex flex-hor w-3/5 items-center ml-auto mr-auto"
+      = link_to "Go Back", search_path, class:'flex items-center b-button inline-block text-white bg-[#707070]'
+      = link_to "Save as a Draft", search_path, class:'flex items-center b-button inline-block text-white bg-[#AAA]'
+      = link_to "Publish", search_path, class:'flex items-center b-button inline-block text-white bg-[#707070]'
+    
+  div class="self-start relative bg-white w-2/5 my-10 mx-5 flex flex-col items-center p-4"
+    div class="relative bg-white flex flex-col items-center p-8"
+      div class="h-40 w-40 m-auto bg-black"
+      /! ^^ make this an image later
+      p class="text-sm px-2 py-1/2 font-bold m-2" Event Type
+    p class="text-sm px-2 py-1/2 font-bold m-2" UPCOMING EVENTS
+    div class="relative bg-white flex flex-row items-center border-b w-4/5"
+      div class="flex flex-col items-center"
+        p class="text-sm font-bold m-1" MONTH
+        p class="text-sm m-1" DAY
+      div class="flex flex-col ml-4"
+        p class="text-sm font-bold m-1" Title of Event
+        p class="text-sm m-1" Location
+        p class="text-xs px-2 py-1/2 border-black border rounded-xl m-2" Event Type
+    div class="relative bg-white flex flex-row items-center border-b w-4/5"
+      div class="flex flex-col items-center"
+        p class="text-sm font-bold m-1" MONTH
+        p class="text-sm m-1" DAY
+      div class="flex flex-col ml-4"
+        p class="text-sm font-bold m-1" Title of Event
+        p class="text-sm m-1" Location
+        p class="text-xs px-2 py-1/2 border-black border rounded-xl m-2" Event Type
+    div class="relative bg-white flex flex-row items-center border-b w-4/5"
+      div class="flex flex-col items-center"
+        p class="text-sm font-bold m-1" MONTH
+        p class="text-sm m-1" DAY
+      div class="flex flex-col ml-4"
+        p class="text-sm font-bold m-1" Title of Event
+        p class="text-sm m-1" Location
+        p class="text-xs px-2 py-1/2 border-black border rounded-xl m-2" Event Type
+    = link_to "View All Events", search_path, class:'m-2 inline-block text-black text-sm'
+    = link_to "Subscribe to Calendar", search_path, class:'flex items-center m-1 b-button inline-block text-white bg-[#FC8383]'
+    = link_to "Export Calendar", search_path, class:'flex items-center m-1 b-button inline-block text-[##4338CA] bg-[#E0E7FF]'
+
+    
+
+    
+
+
+    
