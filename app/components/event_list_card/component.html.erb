@@ -1,11 +1,9 @@
 <div class="flex flex-col align-items-start gap-3 self-stretch py-5 px-3 border-b-2 border-[#E6E6E6]">
   <div class="flex justify-between items-center gap-10 self-stretch">
     <div class="flex-none">
-      <% day_of_week = event.start_time.strftime("%a").upcase %>
-      <% month = event.start_time.strftime("%b").upcase %>
-      <% day = event.start_time.strftime("%-d") %>
-      <% year = event.start_time.strftime("%Y") %>
-      <% time = event.start_time.strftime("%-I:%M %p") %>
+      <% adjusted_start = event.start_time.in_time_zone(helpers.get_timezone()) %>
+      <% month = adjusted_start.strftime("%b").upcase %>
+      <% day = adjusted_start.strftime("%-d") %>
 
       <div class="flex flex-col justify-center text-center font-bold leading-6">
         <div class="month"><%= month %></div>
@@ -15,7 +13,7 @@
     
     <div class="flex flex-col items-start gap-4 grow">
       <% if !@small %>
-        <div class="text-xs font-['Inter'] font-semibold leading-none"><%= "#{day_of_week}, #{month} #{day}, #{year} at #{time}" %></div>
+        <div class="text-xs font-['Inter'] font-semibold leading-none"><%= helpers.format_event_time(event.start_time) %></div>
       <% end %>
       
       <div class="flex flex-col gap-0">
@@ -39,7 +37,7 @@
         <% end %>
 
         <% if @small %>
-            <div class="text-xs font-['Inter'] text-[#6B7280] font-semibold leading-none"><%= "#{day_of_week}, #{month} #{day}, #{year} at #{time}" %></div>
+            <div class="text-xs font-['Inter'] text-[#6B7280] font-semibold leading-none"><%= helpers.format_event_time(event.start_time) %></div>
         <% end %>
       </div>
       

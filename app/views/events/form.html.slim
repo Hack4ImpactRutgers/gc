@@ -9,7 +9,8 @@ div.flex.justify-center.mt-16.h-full style="background-color: #F9FAFC"
 
     = form_with model: @event, class: "w-full h-full m-12 flex flex-col items-start gap-4" do |f|
       = hidden_field_tag 'org_id', params[:org_id] if params[:org_id].present?
-      = hidden_field_tag 'timezone'
+      
+      = hidden_field_tag 'timezone', @user_timezone
 
       h2.text-2xl.font-bold style="color: #3B4958;"
         = @event.new_record? ? "Create Event" : @readonly ? "View Event" : "Edit Event"
@@ -40,11 +41,11 @@ div.flex.justify-center.mt-16.h-full style="background-color: #F9FAFC"
           
         div.w-full
           = f.label :start_time, "Start Time", class: "text-base required"
-          = f.time_field :start_time, class: @readonly ? "c-input bg-gray-100 cursor-not-allowed" : "c-input", disabled: @readonly
+          = f.time_field :start_time, value: @event_start_time, class: @readonly ? "c-input bg-gray-100 cursor-not-allowed" : "c-input", disabled: @readonly
 
         div.w-full.relative
           = f.label :end_time, "End Time", class: "text-base"
-          = f.time_field :end_time, class: @readonly ? "c-input bg-gray-100 cursor-not-allowed" : "c-input", onchange: "shouldShowClearButton()", disabled: @readonly
+          = f.time_field :end_time, value: @event_end_time, class: @readonly ? "c-input bg-gray-100 cursor-not-allowed" : "c-input", onchange: "shouldShowClearButton()", disabled: @readonly
           button.hidden.absolute.right-3.bottom-3 type="button" id="clear-end-time" onclick="clearEndTime()"
             | x
 
@@ -259,9 +260,6 @@ javascript defer:
         const date = document.getElementById("event_date").value;
         let startTime = document.getElementById("event_start_time").value;
         let endTime = document.getElementById("event_end_time").value;
-        
-        // Add timezone to the form data
-        formData.append("timezone", USER_TZ);
         
         // Keep the original date and time values for the backend to handle
         if (date && startTime) {

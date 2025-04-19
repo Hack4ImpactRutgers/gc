@@ -24,12 +24,12 @@ class EventsController < ApplicationController
     events = organization.events.order(:start_time)
     
     # If user timezone is provided, convert the times for display
-    if params[:timezone].present?
+    if @user_timezone.present?
       events_with_timezone = events.map do |event|
         event_hash = event.as_json
         event_hash['start_time'] = event.start_time&.in_time_zone(params[:timezone])
         event_hash['end_time'] = event.end_time&.in_time_zone(params[:timezone])
-        event_hash['timezone'] = params[:timezone]
+        event_hash['timezone'] = @user_timezone
         event_hash
       end
       
@@ -44,14 +44,12 @@ class EventsController < ApplicationController
     @event = Event.new
     @organization = Organization.find(params[:org_id]) if params[:org_id].present?
     @event_is_remote = true
-    @user_timezone = params[:timezone] || 'UTC'
     render :form
   end
   
   def edit
     @event = Event.find(params[:id])
     @organization = @event.organization
-    @user_timezone = params[:timezone] || 'UTC'
     
     if @event.start_time.present?
       # Convert UTC times to user's timezone for display
@@ -70,8 +68,7 @@ class EventsController < ApplicationController
   def show
     @event = Event.find(params[:id])
     @organization = @event.organization
-    @user_timezone = params[:timezone] || 'UTC'
-    
+
     if @event.start_time.present?
       # Convert UTC times to user's timezone for display
       local_start_time = @event.start_time.in_time_zone(@user_timezone)
@@ -137,7 +134,7 @@ class EventsController < ApplicationController
 
   def create
     organization = Organization.find_by(id: params[:org_id])
-    user_timezone = params[:timezone] || 'UTC'
+    user_timezone = @user_timezone
 
     unless organization
       return render json: { error: "Organization not found" }, status: :not_found
@@ -232,7 +229,7 @@ class EventsController < ApplicationController
 
     # Create a copy of the parameters we can modify
     update_params = event_params.to_h
-    user_timezone = params[:timezone] || 'UTC'
+    user_timezone = @user_timezone
     
     # Process the date and time fields from the form if they exist
     if params[:event][:date].present? && params[:event][:start_time].present?
@@ -393,7 +390,7 @@ class EventsController < ApplicationController
     
     begin
       # Parse dates with time information
-      user_timezone = params[:timezone] || 'UTC'
+      user_timezone = @user_timezone
       
       result[:start] = Time.use_zone(user_timezone) do
         Time.zone.parse(parts[0])
